@@ -220,6 +220,7 @@ header > a {
     border: 0;
     color: #fff;
     padding: 12px 22px;
+    cursor: pointer;
   }
 
   form {
@@ -246,6 +247,7 @@ header > a {
     font-size: 40px;
     padding: 0 10px;
     text-align: center;
+    cursor: pointer;
   }
 
   .users {
