@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <title>Testing Template</title>
+</head>
+<body>
+    <div class="wrapper">
+
+        <header>
+
+            <div class="logo">
+                <span>G</span>
+                <p>Global</p>
+            </div>    
+
+            <nav>
+                <a href="" style="    text-decoration: underline;
+                text-decoration-color: #FB9B69;
+                text-decoration-thickness: 2px;
+                text-underline-offset: 8px;">Mobile Top Up</a>
+                <a href="">About</a>
+                <a href="">Rate</a>
+                <a href="">Help</a>
+            </nav>
+
+            <a href="">Sing Up</a>
+
+        </header>
+        
+        <main>
+
+            <section>
+                <h1>Now Buy Your PIN or <span>Top Up</span> </h1>
+                <h1>With Bank Transfer</h1>
+                <p>We Make international calling simple, relible, and cheap basedon your unique calling behavior.</p>
+                <button>Get started</button>
+                <form>
+                    <input type="text" id="inputField" placeholder="|Where do you want to call?" pattern="^[^!@#$%^&*()]+$">
+                    <input type="submit" value="🔍︎">
+                    
+                </form>
+                <div class="users">
+                    <div class="user"></div>
+                    <div class="user"></div>
+                    <div class="user"></div>
+                    <div class="user">+</div>
+                    <p>45k+ Regular User. <span>View Price Plan</span></p>
+                </div>
+            </section>
+
+            <section>
+                <div class="block">
+                    <div class="ellipse">
+            
+                        <img id="flag1" src="images/flags/flag1.png" alt="">
+                        <img id="flag2" src="images/flags/flag2.png" alt="">
+                        <img id="flag3" src="images/flags/flag3.png" alt="">
+                        <img id="flag4" src="images/flags/flag4.png" alt="">
+                        <img id="flag5" src="images/flags/flag5.png" alt="">
+                    </div>
+                    <div class="ellipse_green"></div>
+                    <img id="girl" src="images/student.png" alt="">
+                </div>
+            </section>
+
+        </main>
+
+    </div>
+
+    <script>
+        var inputField = document.getElementById("inputField");
+        inputField.addEventListener("input", function() {
+          var forbiddenChars = /[\!\@\#\$\%\^\&\*\(\)]/;
+          var input = inputField.value;
+          if (forbiddenChars.test(input)) {
+            inputField.value = input.replace(forbiddenChars, "");
+          }
+        });
+        </script>
+</body>
+</html>
